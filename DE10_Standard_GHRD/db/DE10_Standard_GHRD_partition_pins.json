@@ -1,0 +1,291 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[10]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[11]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[12]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[13]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[14]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[15]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[16]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[17]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[18]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[19]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[20]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[21]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[22]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[24]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[33]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[34]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[35]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "altera_edge_detector:pulse_cold_reset",
+			"pins" : [
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "altera_edge_detector:pulse_debug_reset",
+			"pins" : [
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "altera_edge_detector:pulse_warm_reset",
+			"pins" : [
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "debounce:debounce_inst",
+			"pins" : [
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[2]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[3]",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "debounce_1:debounce_inst1",
+			"pins" : []
+		},
+		{
+			"name" : "debounce_1:debounce_inst2",
+			"pins" : []
+		},
+		{
+			"name" : "debounce_1:debounce_inst3",
+			"pins" : []
+		},
+		{
+			"name" : "debounce_1:debounce_inst4",
+			"pins" : []
+		},
+		{
+			"name" : "f_measure:f_measure_inst",
+			"pins" : []
+		},
+		{
+			"name" : "hps_reset:hps_reset_inst",
+			"pins" : [
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "measure:measure_i1",
+			"pins" : []
+		},
+		{
+			"name" : "measure:measure_i2",
+			"pins" : []
+		},
+		{
+			"name" : "measure:measure_i3",
+			"pins" : []
+		},
+		{
+			"name" : "measure:measure_i4",
+			"pins" : []
+		},
+		{
+			"name" : "measure:measure_i5",
+			"pins" : []
+		},
+		{
+			"name" : "pll:pllinst",
+			"pins" : []
+		},
+		{
+			"name" : "soc_system:u0",
+			"pins" : [
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[8]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[9]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[25]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[26]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[9]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,58 @@
+module ADS8861 (
+    input clk,      //65M
+    input rst,
+    input convt,
+    input dout,
+    output sclk,
+    output reg outvalid,
+    output reg[15:0]data
+);
+    reg [4:0]cnt;
+    reg [15:0]data_reg;
+
+
+    reg sclkvalid;
+    assign sclk=sclkvalid?clk:1'b0;
+
+    always @(posedge clk or negedge rst) begin
+        if (!rst) begin
+            cnt<=18;
+            outvalid<=1'b0;
+            //data<=0;
+            sclkvalid<=1'b0;
+        end
+        else begin
+            if (convt) begin
+                sclkvalid<=1'b0;
+                cnt<=18;
+					 data<=data_reg;
+            end
+            else begin
+                if(cnt==17)sclkvalid<=1;
+                cnt<=cnt-1;
+            end
+        end
+    end
+
+    always @(negedge clk) begin
+        case (cnt)
+            16:data_reg[15]<=dout;
+            15:data_reg[14]<=dout;
+            14:data_reg[13]<=dout;
+            13:data_reg[12]<=dout;
+            12:data_reg[11]<=dout;
+            11:data_reg[10]<=dout;
+            10:data_reg[9]<=dout;
+            9:data_reg[8]<=dout;
+            8:data_reg[7]<=dout;
+            7:data_reg[6]<=dout;
+            6:data_reg[5]<=dout;
+            5:data_reg[4]<=dout;
+            4:data_reg[3]<=dout;
+            3:data_reg[2]<=dout;
+            2:data_reg[1]<=dout;
+            1:data_reg[0]<=dout;
+        endcase
+    end
+
+endmodule
